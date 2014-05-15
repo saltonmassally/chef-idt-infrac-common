@@ -10,7 +10,6 @@ include_recipe 'apt'
 include_recipe 'build-essential'
 include_recipe 'python'
 include_recipe 'timezone-ii'
-include_recipe 'ntp'
 
 node[:idt_infra_tools][:apt_packages].each do |pkg|
   package pkg do

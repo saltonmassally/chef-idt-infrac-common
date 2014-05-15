@@ -3,4 +3,6 @@ default[:idt_infra_tools][:apt_packages] = %w[
 
 ]
 
-override['build-essential']['compile_time'] = true
+force_default['build-essential']['compile_time'] = true
+force_default['tz'] = 'Africa/Freetown'
+force_default['ntp']['servers']   = ['0.pool.ntp.org', '1.pool.ntp.org', '2.pool.ntp.org', '3.pool.ntp.org']
